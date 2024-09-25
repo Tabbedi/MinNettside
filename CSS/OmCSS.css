@@ -44,10 +44,9 @@
   }
 
 /* Tekst allignment */
-
-  h1{
-    text-align: center;
-  }
+h2{
+  text-align: right;
+}
 
   h4{
     text-align: center;
@@ -57,15 +56,19 @@
 .flex-container{
   flex-wrap: wrap;
   display: flex;
-
-
+  justify-content: center;
+  background-color: rgb(234, 232, 232);
 }
 
 .flex-container > div {
-  background-color: white;
-  align-self: center;
-  width: 1000px;
+  background-color: rgb(190, 190, 190);
+  width: 700px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+.img{
+  align-self: left;
 }
