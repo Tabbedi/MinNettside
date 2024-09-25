@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
   }
   
   header{
@@ -43,10 +42,21 @@
    transition-duration: 0.3s;
   }
 
+  footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    max-height:40px;
+    min-height: 40px;  
+  }
+
 /* Tekst allignment */
-h2{
-  text-align: right;
-}
+  h1{
+    text-align: center;
+  }
 
   h4{
     text-align: center;
@@ -57,18 +67,19 @@ h2{
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  background-color: rgb(234, 232, 232);
+    background-color: rgb(234, 232, 232);
 }
 
 .flex-container > div {
-  background-color: rgb(190, 190, 190);
-  width: 700px;
+  width: 500px;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.gris{
   text-align: right;
 }
 
-.img{
-  align-self: left;
+.hest{
+  text-align: left;
 }
