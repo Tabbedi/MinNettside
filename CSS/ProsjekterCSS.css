@@ -116,7 +116,7 @@ nav ul li b:hover{
    }
   
 .red:hover{
-  background-color: black;
+  background-color: rgb(140, 140, 140);
   transition-duration: 0.3s;
   
 }
