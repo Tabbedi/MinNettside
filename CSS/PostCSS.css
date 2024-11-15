@@ -28,6 +28,7 @@
   nav ul li{
     list-style: none;
     display: inline-block;
+    margin: 15px;
   }
   
   /* HEADER LINKER */
@@ -130,7 +131,7 @@ h1{
 }
 /*-------------------------------------------*/
 
-/* (PART A) SHOW SELECTED SLIDE ONLY */
+/* Kun vise slide bildet */
 .slides input[type="radio"] { display: none; }
 .slides figure {
   visibility: hidden; opacity: 0;
@@ -140,7 +141,7 @@ h1{
   visibility: visible; opacity: 1;
 }
 
-/* (PART B) SLIDES WRAPPER & SHARED */
+/* Slides wrapper */
 .slides {
   position:relative;
   left: 260px;
@@ -155,20 +156,20 @@ h1{
   font-weight:bold;
 }
 
-/* (PART C) SLIDE IMAGES */
+/* Slides Bildene */
 .slides img {
   top: 0; left: 0;
   width: 100%; height: 100%; object-fit: cover;
 
 }
 
-/* (PART D) SLIDE CAPTION */
+/* Captionene */
 .slides figcaption {
   bottom: 0; left: 0;
   width: 100%; padding: 5px; text-align: center;
 }
 
-/* (PART E) LAST & NEXT BUTTONS */
+/* Neste knappen */
 .slides label {
   top: 50%; transform: translateY(-50%); 
   display: flex; align-items: center; justify-content: center;
