@@ -60,23 +60,19 @@ h5{
 }
   
 
-/* Grid container */
-/*.grid-container {
+/* container */
+.grid-container {
   display: grid;
-  background-color: blue;
   grid-template-columns: repeat(1, 1fr);
+  font-size: 60px;
+  margin-top: 200px;
+  margin-left: 100px;
   gap: 20px;
   padding: 20px;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-*/
-.section1, .section2, .section3 {
-  padding: 20px;
-  min-height: 220px;
-  font-size: 60px;
-  margin-left: 15%;
-}
+
 
 @media (max-width: 500px) {
   .grid-container {

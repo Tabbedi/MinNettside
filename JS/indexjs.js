@@ -1,12 +1,12 @@
-let dynamic_text = document.querySelector(".dynamic_text");
+ let dynamic_text = document.querySelector(".dynamic_text");
 
 // Storing the words or sentences for displaying inside the dynamic text element one by one with animation.
-let text_array = ["HTML", "CSS", "JavaScript", "PHP"];
+let text_array = ["Design", "Media", "Programering", "Kreativitet"];
 
 // For extracting the values from array by the using this value as a index.
 let i = 0;
 
-  // changing the text every 2 second.
+  // Endrer teksten hvert 2 sekund
  setInterval(() => {
     change_text();
     }, 2000);
