@@ -8,104 +8,142 @@
   <meta charset="utf-8">
 </head>
 
-<header>
-    <div class="logo">
-    
-  
-    <!-- Knappene langs overskriften-->
+<head>
+  <!-- Lenker til en ekstern CSS-fil som brukes for å style siden -->
+  <link rel="stylesheet" href="../CSS/PostCSS.css" />
 
+  <!-- Angir en favicon som vises i nettleserens fane -->
+  <link rel="icon" type="image/x-icon" href="../Bilder/favicon.ico">
+
+  <!-- Sidetittel som vises i nettleserens fane -->
+  <title>Tabbed</title>
+
+  <!-- Utf-8 charset tillater bruk av spesialtegn som æ, ø og å -->
+  <meta charset="utf-8">
+</head>
+
+<header>
+  <div class="logo">
+    <!-- Dette området kan brukes til en logo eller nettstedets navn -->
+
+    <!-- Navigasjonsmeny med lenker til forskjellige sider -->
     <nav>
       <ul>
+        <!-- Lenker til startsiden -->
         <li><a href="../index.html">Hjem</a></li>
+
+        <!-- Lenke til "Om"-siden -->
         <li><a href="../HTML/Om.html">Om</a></li>
+
+        <!-- Lenke til "Prosjekter"-siden -->
         <li><a href="../HTML/Prosjekter.html">Prosjekter</a></li>
+
+        <!-- Lenke som feilaktig peker til en CSS-fil, men er ment å føre til en "Kontakt"-side -->
         <li><a href="CSS/icool.css">Kontakt</a></li>
       </ul>
-    </nav> </div> 
-  </header>
+    </nav>
+  </div>
+</header>
 
+<!-------------------------------BODY-------------------------------->
+<body>
+  <!-- Hovedoverskrift for siden -->
+  <h1>| Dokumentasjon / Logg |</h1>
 
-  <!-------------------------------BODY-------------------------------->
-  <body>
-
-    <H1>| Dokumentasjon / Logg |</H1>
-
-
-    <div class="container"> 
-        <div class="stor">
-        <img src="../Bilder/kodingbilde.jpg" alt="" style="height: 250px;width: 900px;"> 
-        </div>
+  <div class="container">
+    <!-- Stort bilde relatert til temaet -->
+    <div class="stor">
+      <img src="../Bilder/kodingbilde.jpg" alt="" style="height: 250px;width: 900px;">
     </div>
+  </div>
 
-    <div class="container"> 
-        <div class="title">
-
-            <h2>Logg for arbeid i konseptutvikling og programering</h2>
-
-            av Tord
-            <hr style="width:80%;margin: auto;margin-top: 10px;">
-        </div>
-
+  <div class="container">
+    <!-- Tittel og beskrivelse av loggen -->
+    <div class="title">
+      <h2>Logg for arbeid i konseptutvikling og programering</h2>
+      av Tord
+      <hr style="width:80%;margin: auto;margin-top: 10px;">
     </div>
+  </div>
 
-
-    <div class="container"> 
-        <div class="liten">
-            På denne undersiden skal jeg legge inn en liten logg for hver gang jeg holder på med kons. og progr.
-        </div>
+  <div class="container">
+    <!-- Kort forklaring av formålet med loggsiden -->
+    <div class="liten">
+      På denne undersiden skal jeg legge inn en liten logg for hver gang jeg holder på med kons. og progr.
     </div>
+  </div>
 
-
-  
+  <!-- Tabell som dokumenterer arbeid og fremskritt -->
   <table>
+    <!-- Overskriftsrad som definerer kolonnene i tabellen -->
     <tr>
       <th>Dato</th>
       <th>Hva som er gjort</th>
       <th>Kilde</th>
       <th>Status</th>
     </tr>
+
+    <!-- Første rad i tabellen, dokumenterer opprettelse av loggen -->
     <tr>
       <td>15/11/24</td>
       <td>Laget underside til dokumentasjon av arbeid</td>
       <td>---</td>
       <th>Pågående</th>
     </tr>
+
+    <!-- Andre rad, dokumenterer arbeidet med tabellen -->
     <tr>
       <td>20/11/24</td>
       <td>Laget tabell til dokumentasjons undersiden</td>
-      <td>W3Schools: <a href="https://www.w3schools.com/html/html_tables.asp">W3schools Tables</a> </td>
+      <td>W3Schools: <a href="https://www.w3schools.com/html/html_tables.asp">W3schools Tables</a></td>
       <th>Ferdig</th>
     </tr>
 
+    <!-- Tredje rad, dokumenterer sluttføring av oppgaver -->
+    <tr>
+      <td>22/11/24</td>
+      <td>Fikset kommentarer på alle kodene, lukket alle tags, skrevet tabell og logg, syncet opp mot git og laget word doc for å skrive at jeg har gjort det</td>
+      <td>---</td>
+      <th>Ferdig</th>
+    </tr>
   </table>
 
-
-   <!-------------------------------FOOTER--------------------------------> 
+  <tr>
+    <td>27/11/24</td>
+    <td>Byttet på Om meg side skriften</td>
+    <td>---</td>
+    <th>Pågående</th>
+  </tr>
+</table>
+<!-------------------------------FOOTER-------------------------------->
   <footer>
+    <!-- Kontaktinformasjon -->
     <h2>Kontakt Meg</h2>
     <br><br>
 
+    <!-- Navigasjonsmeny med lenker til kontaktinformasjon -->
     <nav>
       <ul>
+        <!-- Lenke til GitHub-profil -->
         <li><a href="https://github.com/Tabbedi"><img src="../Bilder/Github.png" alt="githublogo" style="width:28px;height:28px;"></a></li>
+
+        <!-- Lenke til e-post -->
         <li><a href="mailto: e-torabb@iskule.no"><img src="../Bilder/Mail.png" alt="maillogo" style="width:28px;height:28px;"></a></li>
       </ul>
     </nav>
 
     <br><br><br>
+    <!-- Horisontal linje for estetisk separasjon -->
     <hr class="solid">
     <br><br><br>
+
+    <!-- Opphavsrettsinformasjon -->
     © Tord Abbedissen 2024
-    <br>
-    <br>
+    <br><br>
     All rights reserved. No part of this publication can be reproduced, <br>
     stored in a retrieval system or transmitted in any forms or any <br>
     means, electronic, mechanical or photocopying, recording, or otherwise <br>
-    without the prior permision of the publisher.
-
-
-
-  </footer> 
-
-  </body>
+    without the prior permission of the publisher.
+  </footer>
+</body>
 </html>
