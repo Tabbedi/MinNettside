@@ -7,30 +7,119 @@
   <meta charset="utf-8">
 </head>
 
+<!-------------------------------------------------HEADER-------------------------------------------------->
 
-<!--DENNE UNDERSIDEN ER IKKE FERDIG OG BLE BRUKT TIL Å LAGE PROSJEKT KNAPPENE PÅ PROSJEKT UNDERSIDEN, 
-DET VIL IKKE FORBLI SÅNN TIL NÅR NETTSIDEN ER FERDIG !!!-->
+<header>
+    <div class="logo">
+      <!-- Logo-boksen kan brukes til å vise et logo eller navn -->
+  
+      <!-- Navigasjonsmeny som gir lenker til forskjellige sider -->
+      <nav>
+        <ul>
+          <!-- Hjem-lenke som navigerer til startsiden -->
+          <li><a href="../index.html">Hjem</a></li>
+  
+          <!-- Lenke til "Om"-siden -->
+          <li><a href="../HTML/Om.html">Om</a></li>
+  
+          <!-- Lenke til "Prosjekter"-siden -->
+          <li><a href="../HTML/Prosjekter.html">Prosjekter</a></li>
+  
+          <!-- Lenke til CSS-stilfil, men teksten antyder at dette burde være en "Kontakt"-side -->
+          <li><a href="../HTML/Kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div> 
+  </header>
+  
+<!-------------------------------------------------BODY-------------------------------------------------->
 
-<body>
-   
+  <body>
 
+    <!-- Hovedoverskrift for "Kontakt"-siden -->
+  <h1>| Kontakt |</h1>
+
+    <!-- Kort velkomstmelding -->
+    <h4>Kontakt Meg!</h4>
+
+
+ 
     <div class="container">
-        <div class="red">
-            <div class="green">
-                <a href="mailto: e-torabb@iskule.no">
-                    <img src="../Bilder/PortraitFarge.jpg" alt="maillogo" style="width:330px;height:240px;">
-                </a>
-            </div>
-            <div class="blue">
-                <hr class="solid1">
-                <br>
-                <h3>Prosjekt</h3>
-                <br>
-                Jeg koste meg mye, spesielt når jeg hadde min favoritt 
-                <a href="#"> Les mer...</a>
-            </div>
+        <form action="https://formsubmit.co/tordabbedissen@gmail.com" method="POST">
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Emne</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="emne" name="Emne" placeholder="Hvorfor skriver du...">
+          </div>
         </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Navn</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="Navnet ditt...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Grunn for kontakt</label>
+          </div>
+          <div class="col-75">
+            <select id="Grunn" name="grunn">
+              <option value="Kontakt">Kontakt</option>
+              <option value="Hjelp">Hjelp</option>
+              <option value="Ansette">Ansette</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Tekst</label>
+          </div>
+          <div class="col-75">
+            <textarea id="tekst" name="tekst" placeholder="Skriv noe..." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
     </div>
+    
+
+
+<!-------------------------------------------------FOOTER-------------------------------------------------->
+
+    <footer>
+        <!-- Footer som viser kontaktinformasjon -->
+        <h2>Kontakt Meg</h2>
         
-</body>
+      
+        <!-- Navigasjonsmeny med lenker til eksterne ressurser -->
+        <nav>
+          <ul>
+            <!-- Lenke til GitHub-profil -->
+            <li><a href="https://github.com/Tabbedi"><img src="../Bilder/Github.png" alt="githublogo" style="width:28px;height:28px;"></a></li>
+      
+            <!-- Lenke til e-post -->
+            <li><a href="mailto: e-torabb@iskule.no"><img src="../Bilder/Mail.png" alt="maillogo" style="width:28px;height:28px;"></a></li>
+          </ul>
+        </nav>
+      
+        
+        <!-- Horisontal linje for estetisk separasjon -->
+        <hr class="solid">
+        
+      
+        <!-- Opphavsrettsinformasjon -->
+        © Tord Abbedissen 2024
+        <br><br>
+        Alle rettigheter forbeholdt. Ingen deling av denne publikasjonen kan reproduseres,
+        lagres i gjenfinningssystem eller overført i noen form eller <br>hvilken som helst form 
+        betyr elektronisk, mekanisk, fotokopiering, opptak eller annet
+        uten forutgående tillatelse fra utgiveren. 
+      </footer>
+  </body>
 </html>

@@ -25,7 +25,7 @@
         <li><a href="../HTML/Prosjekter.html">Prosjekter</a></li>
 
         <!-- Lenke til en CSS-fil, men bør endres til en Kontakt-side -->
-        <li><a href="CSS/icool.css">Kontakt</a></li>
+        <li><a href="../HTML/Kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
   </div>
@@ -45,6 +45,16 @@
 
   <br> <br> 
 
+<!--------------------------------------------------REGLER IFORHOLD TIL PROSJEKT SLIDESENE!------------------------------------->
+
+ <!-- Prosjekt boksene er 3 flexboxer inne i hverandre. Det er den rød boksen som er hosten for de andre. Den grønne
+   "green", er boksen der bildene for prosjektene skal være. Boksen "Blue"m er boksen der beskrivelsene for prosjektet
+    og les mer knappen står--> 
+
+
+  <!-- Selvom bildene i prosjektet har definert bilde høyden og vidden selv, så er bildene satt ned i størrelse så
+    de er like store som det stylen vil definere. Jeg har skrevet ned stylen så boksene ikke ødelegges-->
+
   <div class="container"> 
 
     <!-- Prosjekt 1 ligger inni en rød boks -->
@@ -53,7 +63,7 @@
       <div class="green">
         <a href="../HTML/Dokumentasjon.html">
           <!-- Klikkbart bilde for å åpne Dokumentasjon-siden -->
-          <img src="../Bilder/kodingbilde.jpg" alt="maillogo" style="width:330px;height:240px;">
+          <img src="../Bilder/KodingBildeMinimized.jpg" alt="maillogo" style="width:330px;height:240px;">
         </a>
       </div>
       <!-- Blå boks inneholder teksten og knappen og ligger også inni rød boks -->
@@ -76,7 +86,7 @@
       <div class="green">
         <a href="../HTML/Post1.html">
           <!-- Klikkbart bilde -->
-          <img src="../Bilder/Blomster.jpg" alt="maillogo" style="width:330px;height:240px;">
+          <img src="../Bilder/Placeholder.png" alt="Placeholder Bilde" style="width:330px;height:240px;">
         </a>
       </div>
       <div class="blue">
@@ -84,7 +94,7 @@
         <br>
         <h3>Prosjekt</h3>
         <br>
-        Jeg koste meg mye, spesielt når jeg hadde min favoritt 
+        Denne Prosjekt boksen er ikke i bruk enda!
         <br>
         <!-- Knapp som navigerer til en ny side -->
         <button class="button" onclick="window.location.href='../HTML/Post1.html'">
@@ -97,7 +107,7 @@
     <div class="red">
       <div class="green">
         <a href="../HTML/Post1.html">
-          <img src="../Bilder/Himmel.jpg" alt="maillogo" style="width:330px;height:240px;">
+          <img src="../Bilder/Placeholder.png" alt="Placeholder Bilde" style="width:330px;height:240px;">
         </a>
       </div>
       <div class="blue">
@@ -105,7 +115,7 @@
         <br>
         <h3>Prosjekt</h3>
         <br>
-        Jeg koste meg mye, spesielt når jeg hadde min favoritt 
+        Denne Prosjekt boksen er ikke i bruk enda!
         <br>
         <button class="button" onclick="window.location.href='../HTML/Post1.html'">
           <span>Les mer... </span>
@@ -122,7 +132,7 @@
     <div class="red">
       <div class="green">
         <a href="../HTML/Post1.html">
-          <img src="../Bilder/Solnedgang.jpg" alt="maillogo" style="width:330px;height:240px;">
+          <img src="../Bilder/Placeholder.png" alt="Placeholder Bilde" style="width:330px;height:240px;">
         </a>
       </div>
       <div class="blue">
@@ -130,7 +140,7 @@
         <br>
         <h3>Prosjekt</h3>
         <br>
-        Jeg koste meg mye, spesielt når jeg hadde min favoritt 
+        Denne Prosjekt boksen er ikke i bruk enda!
         <br>
         <button class="button" onclick="window.location.href='../HTML/Post1.html'">
           <span>Les mer... </span>
@@ -142,7 +152,7 @@
     <div class="red">
       <div class="green">
         <a href="../HTML/Post1.html">
-          <img src="../Bilder/Tiger.jpg" alt="maillogo" style="width:330px;height:240px;">
+          <img src="../Bilder/Placeholder.png" alt="Placeholder Bilde" style="width:330px;height:240px;">
         </a>
       </div>
       <div class="blue">
@@ -150,7 +160,7 @@
         <br>
         <h3>Prosjekt</h3>
         <br>
-        Jeg koste meg mye, spesielt når jeg hadde min favoritt 
+        Denne Prosjekt boksen er ikke i bruk enda!
         <br>
         <button class="button" onclick="window.location.href='../HTML/Post1.html'">
           <span>Les mer... </span>
@@ -162,7 +172,7 @@
     <div class="red">
       <div class="green">
         <a href="../HTML/Post1.html">
-          <img src="../Bilder/PortraitFarge.jpg" alt="maillogo" style="width:330px;height:240px;">
+          <img src="../Bilder/Placeholder.png" alt="Placeholder Bilde" style="width:330px;height:240px;">
         </a>
       </div>
       <div class="blue">
@@ -170,7 +180,7 @@
         <br>
         <h3>Prosjekt</h3>
         <br>
-        Jeg koste meg mye, spesielt når jeg hadde min favoritt 
+        Denne Prosjekt boksen er ikke i bruk enda!
         <br>
         <button class="button" onclick="window.location.href='../HTML/Post1.html'">
           <span>Les mer... </span>
@@ -182,27 +192,33 @@
   <br><br><br>
 
   <footer>
-    <!-- Footer-seksjon for kontaktinformasjon -->
+    <!-- Footer som viser kontaktinformasjon -->
     <h2>Kontakt Meg</h2>
-    <br><br>
-
-    <!-- Lenker til GitHub og e-post med ikoner -->
+    
+  
+    <!-- Navigasjonsmeny med lenker til eksterne ressurser -->
     <nav>
       <ul>
+        <!-- Lenke til GitHub-profil -->
         <li><a href="https://github.com/Tabbedi"><img src="../Bilder/Github.png" alt="githublogo" style="width:28px;height:28px;"></a></li>
+  
+        <!-- Lenke til e-post -->
         <li><a href="mailto: e-torabb@iskule.no"><img src="../Bilder/Mail.png" alt="maillogo" style="width:28px;height:28px;"></a></li>
       </ul>
     </nav>
-
-    <br><br><br>
+  
+    
+    <!-- Horisontal linje for estetisk separasjon -->
     <hr class="solid">
-    <br><br><br>
+    
+  
+    <!-- Opphavsrettsinformasjon -->
     © Tord Abbedissen 2024
-    <br>
-    All rights reserved. No part of this publication can be reproduced, <br>
-    stored in a retrieval system or transmitted in any forms or any <br>
-    means, electronic, mechanical or photocopying, recording, or otherwise <br>
-    without the prior permision of the publisher.
-  </footer> 
+    <br><br>
+    Alle rettigheter forbeholdt. Ingen deling av denne publikasjonen kan reproduseres,
+    lagres i gjenfinningssystem eller overført i noen form eller <br>hvilken som helst form 
+    betyr elektronisk, mekanisk, fotokopiering, opptak eller annet
+    uten forutgående tillatelse fra utgiveren. 
+  </footer>
 </body>
 </html>

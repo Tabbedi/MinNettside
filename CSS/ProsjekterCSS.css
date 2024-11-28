@@ -135,6 +135,7 @@ img:hover {
 /* Line Styling */
 hr.solid {
   border-top: 3px solid #020202;
+  margin: 30px;
 }
 
 hr.solid1 {
@@ -145,6 +146,10 @@ hr.solid1 {
 h3 {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+}
+
+h2 {
+  margin: 20px;
 }
 
 /* ----------------BUTTON STYLING---------------- */
