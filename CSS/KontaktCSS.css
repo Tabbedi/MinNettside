@@ -76,10 +76,11 @@ h4{
 /* Container Styling */
 
 .contact-container {
-  height: 100vh;
+  height: 93vh;
   display: flex;  
   align-items: center;
   justify-self: center;
+  margin-bottom: 10px;
 }
 
 .contact-left{
@@ -88,6 +89,7 @@ h4{
   align-items: start;
   gap: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .contact-left hr{
@@ -107,20 +109,59 @@ h4{
 .contact-inputs{
   width: 400px;
   height: 50px;
-  border: 10px;
-  border-color: black;
-  outline: none;
   padding-left: 25px;
   border-radius: 50px;
   background-color: black;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: lighter;
 }
 
 .contact-inputs:focus{
-  border: 3px solid rgb(237, 209, 68);
-  transition: 0.3;
+  border: 4px solid white;
+  font-weight: bold;
+  transition-duration: 0.1s;
+  
 }
+
+.contact-inputs::placeholder{
+  color: lightgray;
+}
+
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  gap: 10px;
+  border: 2px solid gray;
+  border-radius: 50px;
+  cursor: pointer;
+  background: gray;
+}
+
+.contact-left button:hover{
+  background: white;
+  border: 2px solid black;
+  color: black;
+  transition-duration: 0.3s;
+}
+/*
+@media screen (max-width:480px) {
+    .contact-inputs{
+   width: 80vw;
+   font-size: 50px;
+  }
+  .contact-left{
+    height: auto;
+    gap: 50px;
+  }
+  body{
+    background-color: red;
+  }
+} 
+
+
 
 /* -------------------FOOTER STYLING--------------------- */
 

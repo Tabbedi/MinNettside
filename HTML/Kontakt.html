@@ -5,6 +5,7 @@
   <title>Tabbed </title>
   <!-- utf-8 gjør at vi kan bruke æ, ø og å -->
   <meta charset="utf-8">
+
 </head>
 
 <!-------------------------------------------------HEADER-------------------------------------------------->
@@ -40,19 +41,20 @@
   <h1>| Kontakt |</h1>
 
     <!-- Kort velkomstmelding -->
-    <h4>Kontakt Meg!</h4>
+    <h4>På denne undersiden kan du sende en direkte epost til meg.</h4>
 
 
  
 <div class="contact-container">
-  <form action="" class="contact-left">
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
     <div class="contact-left-title">
     <h2>Send meg en Mail!</h2>
     <hr>
   </div>
-  <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-  <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-  <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+  <input type="hidden" name="access_key" value="8dc75323-bcff-4115-abd2-80c7ddcee325">
+  <input type="text" name="name" placeholder="Ditt navn.." class="contact-inputs" required>
+  <input type="email" name="email" placeholder="Mailen din.." class="contact-inputs" required>
+  <textarea name="message" placeholder="Meldingen din.." class="contact-inputs" required></textarea>
   <button type="submit">Submit <img src="" alt=""></button>
   </form>
   <div class="contact-right">
