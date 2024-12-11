@@ -1,0 +1,49 @@
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  /* HEADER Styling */
+  header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  header h2 {
+    font-size: 30px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    max-height: 40px;
+    min-height: 40px;
+  }
+  
+  /* Navigation Styling */
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(203, 178, 54);
+    transition-duration: 0.3s;
+  }
+
+
+.backgroundimage
