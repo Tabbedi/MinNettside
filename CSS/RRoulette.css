@@ -46,4 +46,12 @@
   }
 
 
-.backgroundimage
+  body {
+    background-color: black;
+    background-image: url(../Bilder/RRBakgrunn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    margin: 0; /* Removes default body margin */
+    height: 100vh; /* Sets body height to 100% of the viewport */
+}
