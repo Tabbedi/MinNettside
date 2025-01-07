@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="no">
+<head> 
+    <link rel="stylesheet" href="../CSS/Task.css" />
+  <title>Tabbed </title>
+  <!-- utf-8 gjør at vi kan bruke æ, ø og å -->
+  <meta charset="utf-8">
+
+</head>
+
+<!-------------------------------------------------HEADER-------------------------------------------------->
+
+<header>
+  
+      <!-- Navigasjonsmeny som gir lenker til forskjellige sider -->
+      <nav>
+        <ul>
+          <!-- Hjem-lenke som navigerer til startsiden -->
+          <li><a href="../index.html">Hjem</a></li>
+  
+          <!-- Lenke til "Om"-siden -->
+          <li><a href="../HTML/Om.html">Om</a></li>
+  
+          <!-- Lenke til "Prosjekter"-siden -->
+          <li><a href="../HTML/Prosjekter.html">Prosjekter</a></li>
+  
+          <!-- Lenke til CSS-stilfil, men teksten antyder at dette burde være en "Kontakt"-side -->
+          <li><a href="../HTML/Kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div> 
+  </header>
+  
+<!-------------------------------------------------BODY-------------------------------------------------->
+
+  <body>
+
+    <!-- Hovedoverskrift for "Kontakt"-siden -->
+  <h1>| Tasks! |</h1>
+
+    <!-- Kort velkomstmelding -->
+    <h4>På denne undersiden kan du legge til og fjerne tasks via bruk av JS!</h4>
+
+    Denne menyen funker ved å legge til teksten din i prompten under der det <br>
+    står "Skriv inn en task",  deretter klikk på "Legg til task knappen." <br>
+    Om du vil fjerne en task kan du klikke på den tasken du vil fjerne. <br>
+    (Det skal komme en rød strek over den taksen du hovrer over)
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Skriv inn en task...">
+      <button id="addTaskBtn">Legg til task</button>
+    </div>
+    <ul id="taskList">
+      <!-- Dynamisk liste over tasks -->
+    </ul>
+  
+    <script src="../JS/TaskJS.js"></script>
+
+
+<!-------------------------------------------------FOOTER-------------------------------------------------->
+
+    <footer>
+        <!-- Footer som viser kontaktinformasjon -->
+        <h2>Kontakt Meg</h2>
+        
+      
+        <!-- Navigasjonsmeny med lenker til eksterne ressurser -->
+        <nav>
+          <ul>
+            <!-- Lenke til GitHub-profil -->
+            <li><a href="https://github.com/Tabbedi"><img src="../Bilder/Github.png" alt="githublogo" style="width:28px;height:28px;"></a></li>
+      
+            <!-- Lenke til e-post -->
+            <li><a href="mailto: e-torabb@iskule.no"><img src="../Bilder/Mail.png" alt="maillogo" style="width:28px;height:28px;"></a></li>
+          </ul>
+        </nav>
+      
+        
+        <!-- Horisontal linje for estetisk separasjon -->
+        <hr class="solid">
+        
+      
+        <!-- Opphavsrettsinformasjon -->
+        © Tord Abbedissen 2024
+        <br><br>
+        Alle rettigheter forbeholdt. Ingen deling av denne publikasjonen kan reproduseres,
+        lagres i gjenfinningssystem eller overført i noen form eller <br>hvilken som helst form 
+        betyr elektronisk, mekanisk, fotokopiering, opptak eller annet
+        uten forutgående tillatelse fra utgiveren. 
+      </footer>
+  </body>
+</html>

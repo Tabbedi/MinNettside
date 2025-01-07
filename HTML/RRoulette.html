@@ -1,33 +1,47 @@
-<html lang="no">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/RRoulette.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Russian Roulette Game</title>
+  <link rel="stylesheet" href="../CSS/RRoulette.css" />
 </head>
-
-<header>
-    <!-- Navigasjonsmeny som gir lenker til forskjellige sider -->
-    <nav>
-        <ul>
-          <!-- Hjem-lenke som navigerer til startsiden -->
-          <li><a href="../index.html">Hjem</a></li>
-  
-          <!-- Lenke til "Om"-siden -->
-          <li><a href="../HTML/Om.html">Om</a></li>
-  
-          <!-- Lenke til "Prosjekter"-siden -->
-          <li><a href="../HTML/Prosjekter.html">Prosjekter</a></li>
-  
-          <!-- Lenke til CSS-stilfil, men teksten antyder at dette burde være en "Kontakt"-side -->
-          <li><a href="../HTML/Kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-    </div> 
-</header>
 
 
 <body>
+  <!-- Buttons and Prompts Section -->
+  <div class="skytemeny">
+    <!-- Top-left decorative image -->
+    <img src="../Bilder/RRLogo.png" alt="Decorative Image" class="top-left">
+  
+    <!-- Container for the buttons -->
+    <div class="button-container">
+      <button id="player-shoot">Du begynner</button>
+      <button id="robot-shoot">Robot begynner</button>
+    </div>
+  
+    <!-- Game result prompt -->
+    <div id="game-over">
+      <h1 id="result-text">Game Over</h1>
+      <button id="restart">Start På Nytt</button>
+    </div>
+  
+    <!-- Bottom-left clickable image -->
+    <a href="https://tabbedi.github.io/MinNettside/HTML/Prosjekter.html" class="bottom-left">
+      <img src="../Bilder/back.png" alt="Clickable Link">
+    </a>
+  </div>
+  
 
+  <!-- Revolver Image Section -->
+  <div class="revolver1">
+    <img id="gun-image" src="../Bilder/RevolverBildet.png" alt="Klikk Meg!">
+  </div>
+
+  <!-- Audio files for shot sounds -->
+  <audio id="shot-sound" src="../Lyder/SkuddLyd.mp3" preload="auto"></audio>
+  <audio id="no-shot-sound" src="../Lyder/TomtSkudd.mp3" preload="auto"></audio>
+
+  <script src="../JS/Russian.js"></script>
 </body>
 </html>

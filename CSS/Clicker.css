@@ -1,4 +1,4 @@
-
+  /* Animation / Bounce effekten til bildet */
  @keyframes bounce {
     0%, 100% {
       transform: scale(1);
@@ -16,6 +16,8 @@
     text-align: center;
     justify-content: center;
   }
+
+    /* Klikkbarebildet */
   #clicker-img {
     width: 200px;
     height: auto;
@@ -24,6 +26,7 @@
 
   }
   
+    /* Scoren */
   #score {
     font-size: 24px;
     margin-top: 20px;
@@ -61,13 +64,13 @@
     max-height:40px;
     min-height: 40px;
   }
-    
+
+   /* HEADER LINKER */ 
   nav ul li{
     list-style: none;
     display: inline-block;
   }
   
-  /* HEADER LINKER */
   nav ul li a{
     text-decoration: none;
     color: black;

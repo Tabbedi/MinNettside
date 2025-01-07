@@ -1,57 +1,80 @@
-/* Global Reset */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
-  }
-  
-  /* HEADER Styling */
-  header {
-    background-color: black;
-    color: white;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  header h2 {
-    font-size: 30px;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    max-height: 40px;
-    min-height: 40px;
-  }
-  
-  /* Navigation Styling */
-  nav ul li {
-    list-style: none;
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 0 15px;
-  }
-  
-  nav ul li a:hover {
-    color: rgb(203, 178, 54);
-    transition-duration: 0.3s;
-  }
+body {
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  margin: 0;
+}
 
+.skytemeny {
+  flex: 0; /* Prevent resizing */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 20px;
+  background-color: #1f2229; /* Darker background for this section */
+  border-right: 4px solid #444; /* Vertical line on the right */
+  width: 25%; /* Fixed width for the left section */
+  position: relative; /* Enable positioning for child elements */
+}
 
-  body {
-    background-color: black;
-    background-image: url(../Bilder/RRBakgrunn.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Ensures the image covers the entire screen */
-    margin: 0; /* Removes default body margin */
-    height: 100vh; /* Sets body height to 100% of the viewport */
+.skytemeny img.top-left {
+  position: absolute; /* Place the decorative image in the top left */
+  top: 20px; /* Margin from the top */
+  left: 20px; /* Margin from the left */
+  width: 250px !important; /* Enforce the size of the decorative image */
+  height: auto !important; /* Maintain aspect ratio */
+}
+
+.skytemeny .button-container {
+  display: flex; /* Arrange buttons horizontally */
+  gap: 15px; /* Space between buttons */
+  margin-top: 100px; /* Space below the image */
+  margin-bottom: 20px; /* Space between buttons and the result text */
+}
+
+.skytemeny button {
+  padding: 15px 25px; /* Button size */
+  font-size: 16px; /* Button text size */
+  background-color: #444; /* Button background */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.skytemeny button:hover {
+  background-color: #666; /* Lighter background on hover */
+}
+
+#game-over {
+  text-align: center; /* Center the result text */
+  margin-top: 20px; /* Add space above the result text */
+}
+
+.skytemeny a.bottom-left {
+  position: absolute; /* Place the clickable image in the bottom left */
+  bottom: 10px; /* Margin from the bottom */
+  left: 10px; /* Margin from the left */
+}
+
+.skytemeny a.bottom-left img {
+  width: 40px !important; /* Enforce the size of the clickable image */
+  height: auto !important; /* Maintain aspect ratio */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.revolver1 {
+  position: absolute; /* Fix the revolver in the center of the visible screen */
+  top: 50%; /* Vertically center */
+  left: calc(62.5%); /* Horizontally center relative to the remaining screen */
+  transform: translate(-50%, -50%); /* Offset to perfectly center */
+}
+
+.revolver1 img {
+  width: 400px !important; /* Enforce size of the revolver image */
+  height: auto !important; /* Maintain aspect ratio */
+  transition: transform 0.5s ease;
 }
