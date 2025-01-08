@@ -41,14 +41,18 @@
     <h4>På denne undersiden kan du sende en direkte epost til meg.</h4>
 
 
- 
+ <!-- Kontakt skjema-->
 <div class="contact-container">
+  <!-- Sender mailen (gjennom nettside)-->
   <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
     <div class="contact-left-title">
     <h2>Send meg en Mail!</h2>
     <hr>
   </div>
+  <!--spesifike koden som sender den til min mail-->
   <input type="hidden" name="access_key" value="8dc75323-bcff-4115-abd2-80c7ddcee325">
+
+  <!--prompt inputsene-->
   <input type="text" name="name" placeholder="Ditt navn.." class="contact-inputs" required>
   <input type="email" name="email" placeholder="Mailen din.." class="contact-inputs" required>
   <textarea name="message" placeholder="Meldingen din.." class="contact-inputs" required></textarea>
